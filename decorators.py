@@ -26,5 +26,3 @@ def measure_rate(f):
         print(f'Rate of measurements: {1/duration}Hz')
         return
     return inner
-
-# 
