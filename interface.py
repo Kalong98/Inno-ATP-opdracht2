@@ -32,11 +32,12 @@ class ISHT35:
     @check_command
     @log_command
     def send_command(self, command): # Mock-up functie voor interface:
-
         if self.serial_connection:
             print(f'sending command: "{command}"')
             # some send logic
             pass
+    
+    
     @measure_rate
     def get_humidity(self): # Mock-up functie voor interface:
         # if self.serial_connection:

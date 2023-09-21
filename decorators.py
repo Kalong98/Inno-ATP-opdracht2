@@ -23,6 +23,6 @@ def measure_rate(f):
         start_time = time.time()
         f(self)
         duration = time.time() - start_time
-        print(f'Rate of measurements: {1/duration}Hz')
+        print(f'Rate of measurements: {round(1/duration)} Hz')
         return
     return inner
