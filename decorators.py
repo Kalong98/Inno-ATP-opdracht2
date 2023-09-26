@@ -5,10 +5,10 @@ commands = {"configure", "measure_temp", "measure_humidity", "commando1", "comma
 def check_command(f):
     def inner(self, command):
         if command in commands:
-            print(f'command: "{command}" recognized')
+            print(f'Command: "{command}" recognized')
             f(self, command)
         else:
-            print(f'command: "{command}" not recognized')
+            print(f'Command: "{command}" not recognized')
     return inner
 
 def log_command(f):
